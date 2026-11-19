@@ -1,0 +1,138 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Header */
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin-top: 10px;
+    color: #cbd5e1;
+}
+
+/* Main */
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Search and filters */
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.controls input,
+.controls select {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: white;
+}
+
+#searchInput {
+    width: 250px;
+}
+
+.controls button {
+    padding: 12px 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.controls button:hover {
+    background-color: #1d4ed8;
+}
+
+#favoritesBtn {
+    background-color: #f59e0b;
+}
+
+#favoritesBtn:hover {
+    background-color: #d97706;
+}
+
+/* Countries */
+
+#countriesContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    align-items: start;
+}
+
+/* Country cards */
+
+#countriesContainer > div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+#countriesContainer > div:hover {
+    transform: translateY(-5px);
+}
+
+#countriesContainer img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+#countriesContainer h2 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+#countriesContainer p {
+    font-size: 14px;
+    color: #475569;
+    margin: 10px 0;
+}
+
+#countriesContainer button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #f59e0b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#countriesContainer button:hover {
+    background-color: #d97706;
+}

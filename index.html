@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Country Explorer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Country Explorer</h1>
+        <p>Explore countries around the world</p>
+    </header>
+
+    <main>
+
+        <div class="controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Enter country name"
+            >
+
+            <button id="searchBtn">Search</button>
+
+            <select id="regionFilter">
+                <option value="All">All Regions</option>
+                <option value="Europe">Europe</option>
+                <option value="Asia">Asia</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+
+            <select id="sortSelect">
+                <option value="default">Default Order</option>
+                <option value="az">Name: A to Z</option>
+                <option value="za">Name: Z to A</option>
+                <option value="populationHigh">Population: High to Low</option>
+                <option value="populationLow">Population: Low to High</option>
+            </select>
+
+            <button id="favoritesBtn">Favorites</button>
+
+        </div>
+
+        <div id="countriesContainer"></div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
